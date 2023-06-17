@@ -43,7 +43,7 @@ class ChirpController extends Controller
             'message' => 'required|string|max:255',
         ]);
 
-        //THIS LINE CAUSE THE ERROR MODEL DOES NOT EXIST-SA
+        //THIS LINE CAUSE THE ERROR MODEL DOES NOT EXIST :: Class "App\Models\ChirpCreated" not found-SA
         //$request->user()->chirps()->create($validated);
 
         return redirect(route('chirps.index'));
