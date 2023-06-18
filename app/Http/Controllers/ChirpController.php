@@ -44,7 +44,7 @@ class ChirpController extends Controller
         ]);
 
         //THIS LINE CAUSE THE ERROR MODEL DOES NOT EXIST :: Class "App\Models\ChirpCreated" not found-SA
-        //$request->user()->chirps()->create($validated);
+        $request->user()->chirps()->create($validated);
 
         return redirect(route('chirps.index'));
     }
