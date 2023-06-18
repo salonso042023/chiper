@@ -3,11 +3,14 @@
 namespace App\Listeners;
 
 use App\Events\ChirpCreated;
+//Added Step 07 - SA
 use App\Models\User;
+//Added Step 07 - SA
 use App\Notifications\NewChirp;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 
+//Added Step 07 - SA
 class SendChirpCreatedNotifications implements ShouldQueue
 {
     /**
