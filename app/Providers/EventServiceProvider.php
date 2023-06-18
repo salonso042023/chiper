@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Providers;
-
+//Added Step 07 - SA
 use App\Events\ChirpCreated;
-
+//Added Step 07 - SA
 use App\Listeners\SendChirpCreatedNotifications;
 
 use Illuminate\Auth\Events\Registered;
@@ -19,6 +19,7 @@ class EventServiceProvider extends ServiceProvider
      * @var array<class-string, array<int, class-string>>
      */
     protected $listen = [
+        //Added Step 07 - SA
         ChirpCreated::class => [
 
             SendChirpCreatedNotifications::class,

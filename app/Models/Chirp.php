@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Models;
-
+//Added Step 07 - SA
 use App\Events\ChirpCreated;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -14,7 +14,7 @@ class Chirp extends Model
     protected $fillable = [
         'message',
     ];
-
+    //Added Step 07 - SA
     protected $dispatchesEvents = [
 
         'created' => ChirpCreated::class,

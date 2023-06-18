@@ -2,6 +2,7 @@
 
 namespace App\Events;
 
+//Added Step 07 - SA
 use App\Models\Chirp;
 
 use Illuminate\Broadcasting\Channel;
@@ -19,6 +20,7 @@ class ChirpCreated
     /**
      * Create a new event instance.
      */
+    //Added Step 07 - SA
     public function __construct(public Chirp $chirp)
     {
         //

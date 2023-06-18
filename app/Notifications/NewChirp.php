@@ -2,9 +2,11 @@
 
 namespace App\Notifications;
 
+//Added Step 07 - SA
 use App\Models\Chirp;
 
 use Illuminate\Bus\Queueable;
+//Added Step 07 - SA
 use Illuminate\Support\Str;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
@@ -17,6 +19,7 @@ class NewChirp extends Notification
     /**
      * Create a new notification instance.
      */
+    //Added Step 07 - SA
     public function __construct(public Chirp $chirp)
     {
         //
@@ -37,6 +40,7 @@ class NewChirp extends Notification
      */
     public function toMail(object $notifiable): MailMessage
     {
+        //Added Step 07 - SA
         return (new MailMessage)
                     ->subject("New Chirp from {$this->chirp->user->name}")
                     ->greeting("New Chirp from {$this->chirp->user->name}")
